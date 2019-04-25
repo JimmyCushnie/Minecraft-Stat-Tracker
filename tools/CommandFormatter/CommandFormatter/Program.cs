@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CommandFormatter
 {
-    class Program
+    static partial class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            
         }
     }
 }

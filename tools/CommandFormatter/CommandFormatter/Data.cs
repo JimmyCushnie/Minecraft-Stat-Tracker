@@ -1,4 +1,4 @@
-﻿// All the data in this file was extracted from 1.14.jar/assets/minecraft/lang/en_us.json
+﻿// The data in this file was extracted from 1.14.jar/assets/minecraft/lang/en_us.json
 
 using System.Collections.Generic;
 
@@ -1256,6 +1256,29 @@ namespace CommandFormatter
             ["minecraft.gray_banner"] = "Gray Banner",
             ["minecraft.pink_banner"] = "Pink Banner",
             ["minecraft.lime_banner"] = "Lime Banner",
+
+            ["minecraft.light_blue_banner"] = "Light Blue Banner",
+            ["minecraft.magenta_banner"] = "Magenta Banner",
+            ["minecraft.orange_banner"] = "Orange Banner",
+            ["minecraft.shield"] = "Shield",
+            ["minecraft.white_banner"] = "White Banner",
+            ["minecraft.yellow_banner"] = "Yellow Banner",
+            ["minecraft.black_wall_banner"] = "Black Wall Banner",
+            ["minecraft.blue_wall_banner"] = "Blue Wall Banner",
+            ["minecraft.brown_wall_banner"] = "Brown Wall Banner",
+            ["minecraft.cyan_wall_banner"] = "Cyan Wall Banner",
+            ["minecraft.gray_wall_banner"] = "Gray Wall Banner",
+            ["minecraft.green_wall_banner"] = "Green Wall Banner",
+            ["minecraft.light_blue_wall_banner"] = "Light Blue Wall Banner",
+            ["minecraft.light_gray_wall_banner"] = "Light Gray Wall Banner",
+            ["minecraft.lime_wall_banner"] = "Lime Wall Banner",
+            ["minecraft.magenta_wall_banner"] = "Magenta Wall Banner",
+            ["minecraft.orange_wall_banner"] = "Orange Wall Banner",
+            ["minecraft.pink_wall_banner"] = "Pink Wall Banner",
+            ["minecraft.purple_wall_banner"] = "Purple Wall Banner",
+            ["minecraft.red_wall_banner"] = "Red Wall Banner",
+            ["minecraft.white_wall_banner"] = "White Wall Banner",
+            ["minecraft.yellow_wall_banner"] = "Yellow Wall Banner",
         };
 
         // list of items that are blocks
@@ -1939,6 +1962,28 @@ namespace CommandFormatter
           "minecraft.magenta_banner",
           "minecraft.orange_banner",
           "minecraft.white_banner",
+
+            "minecraft.light_blue_banner",
+            "minecraft.magenta_banner",
+            "minecraft.orange_banner",
+            "minecraft.white_banner",
+            "minecraft.yellow_banner",
+            "minecraft.black_wall_banner",
+            "minecraft.blue_wall_banner",
+            "minecraft.brown_wall_banner",
+            "minecraft.cyan_wall_banner",
+            "minecraft.gray_wall_banner",
+            "minecraft.green_wall_banner",
+            "minecraft.light_blue_wall_banner",
+            "minecraft.light_gray_wall_banner",
+            "minecraft.lime_wall_banner",
+            "minecraft.magenta_wall_banner",
+            "minecraft.orange_wall_banner",
+            "minecraft.pink_wall_banner",
+            "minecraft.purple_wall_banner",
+            "minecraft.red_wall_banner",
+            "minecraft.white_wall_banner",
+            "minecraft.yellow_wall_banner",
         };
 
         static bool IsBlock(this string s)

@@ -10,10 +10,10 @@ namespace CommandFormatter
     {
         static void Main()
         {
-            Console.WriteLine("Please enter the location of ValidCriteria.txt");
-            var location = Console.ReadLine();
+            Console.WriteLine("Enter path to file with objective criteria");
+            var path = Console.ReadLine();
 
-            var lines = File.ReadAllLines(location);
+            var lines = File.ReadAllLines(path);
             var commands = new List<string>();
 
             foreach (string line in lines)
@@ -29,69 +29,57 @@ namespace CommandFormatter
                     var beforeColon = line.Substring(0, colonIndex);
                     var afterColon = line.Substring(colonIndex + 1);
 
-                    if (!Items.TryGetValue(afterColon, out var itemName))
+                    if (!Words.TryGetValue(afterColon, out var word))
                     {
-                        Console.WriteLine($"No dictionary value for {afterColon}. Please enter one now.");
+                        Console.WriteLine($"No dictionary value for {afterColon}. Please enter singular:");
                         var newName = Console.ReadLine();
-                        itemName = newName;
-                        Items.Add(afterColon, newName);
+                        Console.WriteLine("Please enter plural:");
+                        var newNamePlural = Console.ReadLine();
+
+                        word = (newName, newNamePlural);
+                        Words.Add(afterColon, (newName, newNamePlural));
                     }
 
                     switch (beforeColon)
                     {
                         case "minecraft.broken":
-                            DisplayName = $"{Plural(itemName)} Broken";         // "Diamond Pickaxes Broken"
+                            DisplayName = $"{word.plural} Broken";
                             break;
 
                         case "minecraft.crafted":
-                            if (afterColon.IsBlock())
-                                DisplayName = $"{itemName} Crafted";            // "Stone Crafted"
-                            else
-                                DisplayName = $"{Plural(itemName)} Crafted";    // "Diamond Pickaxes Crafted"
+                            DisplayName = $"{word.plural} Crafted";
                             break;
 
                         case "minecraft.custom":
-                            DisplayName = $"{itemName}";
+                            DisplayName = $"{word}";
                             break;
 
                         case "minecraft.dropped":
-                            if (afterColon.IsBlock())
-                                DisplayName = $"{itemName} Dropped";            // "Stone Dropped"
-                            else
-                                DisplayName = $"{Plural(itemName)} Dropped";    // "Diamond Pickaxes Dropped"
+                            DisplayName = $"{word.plural} Dropped";
                             break;
 
                         case "minecraft.killed":
-                            DisplayName = $"{Plural(itemName)} Killed";         // "Skeletons Killed"
+                            DisplayName = $"{word.plural} Killed";
                             break;
 
                         case "minecraft.killed_by":
-                            DisplayName = $"Deaths by {itemName}";              // "Deaths by Skeleton"
+                            DisplayName = $"Deaths by {word}";
                             break;
 
                         case "minecraft.mined":
-                            DisplayName = $"{itemName} Mined";                  // "Stone Mined"
+                            DisplayName = $"{word.plural} Mined";
                             break;
 
                         case "minecraft.picked_up":
-                            if (afterColon.IsBlock())
-                                DisplayName = $"{itemName} Picked Up";          // "Stone Picked Up"
-                            else
-                                DisplayName = $"{Plural(itemName)} Picked Up";  // "Diamond Pickaxes Picked Up"
+                            DisplayName = $"{word.plural} Picked Up";
                             break;
 
                         case "minecraft.used":
                             if (afterColon.IsBlock())
-                                DisplayName = $"{itemName} Placed";             // "Stone Placed"
+                                DisplayName = $"{word.plural} Placed";
                             else
-                                DisplayName = $"{itemName} Uses";               // "Diamond Pickaxe Uses"
+                                DisplayName = $"{word} Uses";
                             break;
-                    }
-
-                    string Plural(string single)
-                    {
-                        if (single[single.Length - 1] == 's') return single;
-                        return single + 's';
                     }
                 }
 

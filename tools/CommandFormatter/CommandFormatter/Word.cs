@@ -13,5 +13,15 @@ namespace CommandFormatter
                 single = tuple.Item1,
                 plural = tuple.Item2,
             };
+
+        public static implicit operator Word(string name)
+            => new Word()
+            {
+                single = name,
+                plural = name,
+            };
+
+        public override string ToString()
+            => single;
     }
 }

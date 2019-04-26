@@ -7,7 +7,7 @@ namespace CommandFormatter
         // convert Minecraft's internal names for blocks, items and entities to their display names
         // data extracted from 1.14.jar/assets/minecraft/lang/en_us.json
         // plurals generated with my Pluralizer tool and then manually edited
-        static Dictionary<string, Word> Items = new Dictionary<string, Word>()
+        static Dictionary<string, Word> Words = new Dictionary<string, Word>()
         {
             ["minecraft.air"]                                   = ("Air", "Air"),
             ["minecraft.barrier"]                               = ("Barrier", "Barriers"),
@@ -1116,12 +1116,12 @@ namespace CommandFormatter
             ["minecraft.red_wall_banner"]                       = ("Red Wall Banner", "Red Wall Banners"),
             ["minecraft.white_wall_banner"]                     = ("White Wall Banner", "White Wall Banners"),
             ["minecraft.yellow_wall_banner"]                    = ("Yellow Wall Banner", "Yellow Wall Banners"),
-        };
 
-        // statistic IDs and their names
-        // data extracted from 1.14.jar/assets/minecraft/lang/en_us.json
-        static Dictionary<string, string> Statistics = new Dictionary<string, string>()
-        {
+
+
+            // statistic IDs and their names
+            // data extracted from 1.14.jar/assets/minecraft/lang/en_us.json
+            // statistics don't really have plurals, but the code is neater if they're in the same list here
             ["minecraft.animals_bred"]                          = "Animals Bred",
             ["minecraft.aviate_one_cm"]                         = "Distance by Elytra",
             ["minecraft.clean_armor"]                           = "Armor Pieces Cleaned",
@@ -1195,6 +1195,9 @@ namespace CommandFormatter
             ["minecraft.use_cauldron"]                          = "Water Taken from Cauldron",
             ["minecraft.walk_one_cm"]                           = "Distance Walked",
         };
+
+        
+
 
 
         // list of item IDs that are blocks

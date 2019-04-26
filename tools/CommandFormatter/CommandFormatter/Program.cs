@@ -44,7 +44,7 @@ namespace CommandFormatter
                             break;
 
                         case "minecraft.crafted":
-                            if (itemName.IsBlock())
+                            if (afterColon.IsBlock())
                                 DisplayName = $"{itemName} Crafted";            // "Stone Crafted"
                             else
                                 DisplayName = $"{Plural(itemName)} Crafted";    // "Diamond Pickaxes Crafted"
@@ -55,7 +55,7 @@ namespace CommandFormatter
                             break;
 
                         case "minecraft.dropped":
-                            if (itemName.IsBlock())
+                            if (afterColon.IsBlock())
                                 DisplayName = $"{itemName} Dropped";            // "Stone Dropped"
                             else
                                 DisplayName = $"{Plural(itemName)} Dropped";    // "Diamond Pickaxes Dropped"
@@ -74,14 +74,14 @@ namespace CommandFormatter
                             break;
 
                         case "minecraft.picked_up":
-                            if (itemName.IsBlock())
+                            if (afterColon.IsBlock())
                                 DisplayName = $"{itemName} Picked Up";          // "Stone Picked Up"
                             else
                                 DisplayName = $"{Plural(itemName)} Picked Up";  // "Diamond Pickaxes Picked Up"
                             break;
 
                         case "minecraft.used":
-                            if (itemName.IsBlock())
+                            if (afterColon.IsBlock())
                                 DisplayName = $"{itemName} Placed";             // "Stone Placed"
                             else
                                 DisplayName = $"{itemName} Uses";               // "Diamond Pickaxe Uses"

@@ -310,50 +310,6 @@ scoreboard objectives add 2928 minecraft.killed_by:minecraft.zombie_pigman "Deat
 scoreboard objectives add 2929 minecraft.killed_by:minecraft.zombie_villager "Deaths by Zombie Villager"
 
 
-###################
-# KILLED BY COLOR #
-###################
-
-scoreboard objectives add 9 killedByTeam.aqua "Killed by Aqua"
-scoreboard objectives add 10 killedByTeam.black "Killed by Black"
-scoreboard objectives add 11 killedByTeam.blue "Killed by Blue"
-scoreboard objectives add 12 killedByTeam.dark_aqua "Killed by Dark Aqua"
-scoreboard objectives add 13 killedByTeam.dark_blue "Killed by Dark Blue"
-scoreboard objectives add 14 killedByTeam.dark_gray "Killed by Dark Gray"
-scoreboard objectives add 15 killedByTeam.dark_green "Killed by Dark Green"
-scoreboard objectives add 16 killedByTeam.dark_purple "Killed by Dark Purple"
-scoreboard objectives add 17 killedByTeam.dark_red "Killed by Dark Red"
-scoreboard objectives add 18 killedByTeam.gold "Killed by Gold"
-scoreboard objectives add 19 killedByTeam.gray "Killed by Gray"
-scoreboard objectives add 20 killedByTeam.green "Killed by Green"
-scoreboard objectives add 21 killedByTeam.light_purple "Killed by Light Purple"
-scoreboard objectives add 22 killedByTeam.red "Killed by Red"
-scoreboard objectives add 23 killedByTeam.white "Killed by White"
-scoreboard objectives add 24 killedByTeam.yellow "Killed by Yellow"
-
-
-##############
-# KILL COLOR #
-##############
-
-scoreboard objectives add 5361 teamkill.aqua "Aqua Kills"
-scoreboard objectives add 5362 teamkill.black "Black Kills"
-scoreboard objectives add 5363 teamkill.blue "Blue Kills"
-scoreboard objectives add 5364 teamkill.dark_aqua "Dark Aqua Kills"
-scoreboard objectives add 5365 teamkill.dark_blue "Dark Blue Kills"
-scoreboard objectives add 5366 teamkill.dark_gray "Dark Gray Kills"
-scoreboard objectives add 5367 teamkill.dark_green "Dark Green Kills"
-scoreboard objectives add 5368 teamkill.dark_purple "Dark Purple Kills"
-scoreboard objectives add 5369 teamkill.dark_red "Dark Red Kills"
-scoreboard objectives add 5370 teamkill.gold "Gold Kills"
-scoreboard objectives add 5371 teamkill.gray "Gray Kills"
-scoreboard objectives add 5372 teamkill.green "Green Kills"
-scoreboard objectives add 5373 teamkill.light_purple "Light Purple Kills"
-scoreboard objectives add 5374 teamkill.red "Red Kills"
-scoreboard objectives add 5375 teamkill.white "White Kills"
-scoreboard objectives add 5376 teamkill.yellow "Yellow Kills"
-
-
 ##########
 # BROKEN #
 ##########
@@ -4644,3 +4600,47 @@ scoreboard objectives add 5356 minecraft.used:minecraft.zombie_horse_spawn_egg "
 scoreboard objectives add 5357 minecraft.used:minecraft.zombie_pigman_spawn_egg "Zombie Pigman Spawn Egg Uses"
 scoreboard objectives add 5358 minecraft.used:minecraft.zombie_spawn_egg "Zombie Spawn Egg Uses"
 scoreboard objectives add 5359 minecraft.used:minecraft.zombie_villager_spawn_egg "Zombie Villager Spawn Egg Uses"
+
+
+###################
+# KILLED BY COLOR #
+###################
+
+scoreboard objectives add 9 killedByTeam.aqua "Killed by Aqua"
+scoreboard objectives add 10 killedByTeam.black "Killed by Black"
+scoreboard objectives add 11 killedByTeam.blue "Killed by Blue"
+scoreboard objectives add 12 killedByTeam.dark_aqua "Killed by Dark Aqua"
+scoreboard objectives add 13 killedByTeam.dark_blue "Killed by Dark Blue"
+scoreboard objectives add 14 killedByTeam.dark_gray "Killed by Dark Gray"
+scoreboard objectives add 15 killedByTeam.dark_green "Killed by Dark Green"
+scoreboard objectives add 16 killedByTeam.dark_purple "Killed by Dark Purple"
+scoreboard objectives add 17 killedByTeam.dark_red "Killed by Dark Red"
+scoreboard objectives add 18 killedByTeam.gold "Killed by Gold"
+scoreboard objectives add 19 killedByTeam.gray "Killed by Gray"
+scoreboard objectives add 20 killedByTeam.green "Killed by Green"
+scoreboard objectives add 21 killedByTeam.light_purple "Killed by Light Purple"
+scoreboard objectives add 22 killedByTeam.red "Killed by Red"
+scoreboard objectives add 23 killedByTeam.white "Killed by White"
+scoreboard objectives add 24 killedByTeam.yellow "Killed by Yellow"
+
+
+##############
+# KILL COLOR #
+##############
+
+scoreboard objectives add 5361 teamkill.aqua "Aqua Kills"
+scoreboard objectives add 5362 teamkill.black "Black Kills"
+scoreboard objectives add 5363 teamkill.blue "Blue Kills"
+scoreboard objectives add 5364 teamkill.dark_aqua "Dark Aqua Kills"
+scoreboard objectives add 5365 teamkill.dark_blue "Dark Blue Kills"
+scoreboard objectives add 5366 teamkill.dark_gray "Dark Gray Kills"
+scoreboard objectives add 5367 teamkill.dark_green "Dark Green Kills"
+scoreboard objectives add 5368 teamkill.dark_purple "Dark Purple Kills"
+scoreboard objectives add 5369 teamkill.dark_red "Dark Red Kills"
+scoreboard objectives add 5370 teamkill.gold "Gold Kills"
+scoreboard objectives add 5371 teamkill.gray "Gray Kills"
+scoreboard objectives add 5372 teamkill.green "Green Kills"
+scoreboard objectives add 5373 teamkill.light_purple "Light Purple Kills"
+scoreboard objectives add 5374 teamkill.red "Red Kills"
+scoreboard objectives add 5375 teamkill.white "White Kills"
+scoreboard objectives add 5376 teamkill.yellow "Yellow Kills"

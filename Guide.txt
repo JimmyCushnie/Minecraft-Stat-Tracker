@@ -323,50 +323,6 @@ Deaths by Zombie Pigman...........................2928
 Deaths by Zombie Villager.........................2929
 
 
-###################
-# KILLED BY COLOR #
-###################
-
-Killed by Aqua....................................9
-Killed by Black...................................10
-Killed by Blue....................................11
-Killed by Dark Aqua...............................12
-Killed by Dark Blue...............................13
-Killed by Dark Gray...............................14
-Killed by Dark Green..............................15
-Killed by Dark Purple.............................16
-Killed by Dark Red................................17
-Killed by Gold....................................18
-Killed by Gray....................................19
-Killed by Green...................................20
-Killed by Light Purple............................21
-Killed by Red.....................................22
-Killed by White...................................23
-Killed by Yellow..................................24
-
-
-##############
-# KILL COLOR #
-##############
-
-Aqua Kills........................................5361
-Black Kills.......................................5362
-Blue Kills........................................5363
-Dark Aqua Kills...................................5364
-Dark Blue Kills...................................5365
-Dark Gray Kills...................................5366
-Dark Green Kills..................................5367
-Dark Purple Kills.................................5368
-Dark Red Kills....................................5369
-Gold Kills........................................5370
-Gray Kills........................................5371
-Green Kills.......................................5372
-Light Purple Kills................................5373
-Red Kills.........................................5374
-White Kills.......................................5375
-Yellow Kills......................................5376
-
-
 ##########
 # BROKEN #
 ##########
@@ -970,18 +926,18 @@ Mossy Stone Bricks Crafted........................1420
 Mule Spawn Eggs Crafted...........................1421
 Mushroom Stems Crafted............................1422
 Mushroom Stew Crafted.............................1423
-Music Disc - "11" Crafted.........................1424
-Music Disc - "13" Crafted.........................1425
-Music Disc - "blocks" Crafted.....................1426
-Music Disc - "cat" Crafted........................1427
-Music Disc - "chirp" Crafted......................1428
-Music Disc - "far" Crafted........................1429
-Music Disc - "mall" Crafted.......................1430
-Music Disc - "mellohi" Crafted....................1431
-Music Disc - "stal" Crafted.......................1432
-Music Disc - "strad" Crafted......................1433
-Music Disc - "wait" Crafted.......................1434
-Music Disc - "ward" Crafted.......................1435
+Music Disc - '11' Crafted.........................1424
+Music Disc - '13' Crafted.........................1425
+Music Disc - 'blocks' Crafted.....................1426
+Music Disc - 'cat' Crafted........................1427
+Music Disc - 'chirp' Crafted......................1428
+Music Disc - 'far' Crafted........................1429
+Music Disc - 'mall' Crafted.......................1430
+Music Disc - 'mellohi' Crafted....................1431
+Music Disc - 'stal' Crafted.......................1432
+Music Disc - 'strad' Crafted......................1433
+Music Disc - 'wait' Crafted.......................1434
+Music Disc - 'ward' Crafted.......................1435
 Raw Mutton Crafted................................1436
 Mycelium Crafted..................................1437
 Name Tags Crafted.................................1438
@@ -1853,18 +1809,18 @@ Mossy Stone Bricks Dropped........................2366
 Mule Spawn Eggs Dropped...........................2367
 Mushroom Stems Dropped............................2368
 Mushroom Stew Dropped.............................2369
-Music Disc - "11" Dropped.........................2370
-Music Disc - "13" Dropped.........................2371
-Music Disc - "blocks" Dropped.....................2372
-Music Disc - "cat" Dropped........................2373
-Music Disc - "chirp" Dropped......................2374
-Music Disc - "far" Dropped........................2375
-Music Disc - "mall" Dropped.......................2376
-Music Disc - "mellohi" Dropped....................2377
-Music Disc - "stal" Dropped.......................2378
-Music Disc - "strad" Dropped......................2379
-Music Disc - "wait" Dropped.......................2380
-Music Disc - "ward" Dropped.......................2381
+Music Disc - '11' Dropped.........................2370
+Music Disc - '13' Dropped.........................2371
+Music Disc - 'blocks' Dropped.....................2372
+Music Disc - 'cat' Dropped........................2373
+Music Disc - 'chirp' Dropped......................2374
+Music Disc - 'far' Dropped........................2375
+Music Disc - 'mall' Dropped.......................2376
+Music Disc - 'mellohi' Dropped....................2377
+Music Disc - 'stal' Dropped.......................2378
+Music Disc - 'strad' Dropped......................2379
+Music Disc - 'wait' Dropped.......................2380
+Music Disc - 'ward' Dropped.......................2381
 Raw Mutton Dropped................................2382
 Mycelium Dropped..................................2383
 Name Tags Dropped.................................2384
@@ -3418,18 +3374,18 @@ Mossy Stone Bricks Picked Up......................4123
 Mule Spawn Eggs Picked Up.........................4124
 Mushroom Stems Picked Up..........................4125
 Mushroom Stew Picked Up...........................4126
-Music Disc - "11" Picked Up.......................4127
-Music Disc - "13" Picked Up.......................4128
-Music Disc - "blocks" Picked Up...................4129
-Music Disc - "cat" Picked Up......................4130
-Music Disc - "chirp" Picked Up....................4131
-Music Disc - "far" Picked Up......................4132
-Music Disc - "mall" Picked Up.....................4133
-Music Disc - "mellohi" Picked Up..................4134
-Music Disc - "stal" Picked Up.....................4135
-Music Disc - "strad" Picked Up....................4136
-Music Disc - "wait" Picked Up.....................4137
-Music Disc - "ward" Picked Up.....................4138
+Music Disc - '11' Picked Up.......................4127
+Music Disc - '13' Picked Up.......................4128
+Music Disc - 'blocks' Picked Up...................4129
+Music Disc - 'cat' Picked Up......................4130
+Music Disc - 'chirp' Picked Up....................4131
+Music Disc - 'far' Picked Up......................4132
+Music Disc - 'mall' Picked Up.....................4133
+Music Disc - 'mellohi' Picked Up..................4134
+Music Disc - 'stal' Picked Up.....................4135
+Music Disc - 'strad' Picked Up....................4136
+Music Disc - 'wait' Picked Up.....................4137
+Music Disc - 'ward' Picked Up.....................4138
 Raw Mutton Picked Up..............................4139
 Mycelium Picked Up................................4140
 Name Tags Picked Up...............................4141
@@ -4301,18 +4257,18 @@ Mossy Stone Bricks Placed.........................5000
 Mule Spawn Egg Uses...............................5001
 Mushroom Stems Placed.............................5002
 Mushroom Stew Uses................................5003
-Music Disc - "11" Uses............................5004
-Music Disc - "13" Uses............................5005
-Music Disc - "blocks" Uses........................5006
-Music Disc - "cat" Uses...........................5007
-Music Disc - "chirp" Uses.........................5008
-Music Disc - "far" Uses...........................5009
-Music Disc - "mall" Uses..........................5010
-Music Disc - "mellohi" Uses.......................5011
-Music Disc - "stal" Uses..........................5012
-Music Disc - "strad" Uses.........................5013
-Music Disc - "wait" Uses..........................5014
-Music Disc - "ward" Uses..........................5015
+Music Disc - '11' Uses............................5004
+Music Disc - '13' Uses............................5005
+Music Disc - 'blocks" Uses........................5006
+Music Disc - 'cat' Uses...........................5007
+Music Disc - 'chirp' Uses.........................5008
+Music Disc - 'far' Uses...........................5009
+Music Disc - 'mall' Uses..........................5010
+Music Disc - 'mellohi' Uses.......................5011
+Music Disc - 'stal' Uses..........................5012
+Music Disc - 'strad' Uses.........................5013
+Music Disc - 'wait' Uses..........................5014
+Music Disc - 'ward' Uses..........................5015
 Raw Mutton Uses...................................5016
 Mycelium Placed...................................5017
 Name Tag Uses.....................................5018
@@ -4657,3 +4613,47 @@ Zombie Horse Spawn Egg Uses.......................5356
 Zombie Pigman Spawn Egg Uses......................5357
 Zombie Spawn Egg Uses.............................5358
 Zombie Villager Spawn Egg Uses....................5359
+
+
+###################
+# KILLED BY COLOR #
+###################
+
+Killed by Aqua....................................9
+Killed by Black...................................10
+Killed by Blue....................................11
+Killed by Dark Aqua...............................12
+Killed by Dark Blue...............................13
+Killed by Dark Gray...............................14
+Killed by Dark Green..............................15
+Killed by Dark Purple.............................16
+Killed by Dark Red................................17
+Killed by Gold....................................18
+Killed by Gray....................................19
+Killed by Green...................................20
+Killed by Light Purple............................21
+Killed by Red.....................................22
+Killed by White...................................23
+Killed by Yellow..................................24
+
+
+##############
+# KILL COLOR #
+##############
+
+Aqua Kills........................................5361
+Black Kills.......................................5362
+Blue Kills........................................5363
+Dark Aqua Kills...................................5364
+Dark Blue Kills...................................5365
+Dark Gray Kills...................................5366
+Dark Green Kills..................................5367
+Dark Purple Kills.................................5368
+Dark Red Kills....................................5369
+Gold Kills........................................5370
+Gray Kills........................................5371
+Green Kills.......................................5372
+Light Purple Kills................................5373
+Red Kills.........................................5374
+White Kills.......................................5375
+Yellow Kills......................................5376

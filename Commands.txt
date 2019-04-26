@@ -1,9 +1,6 @@
-
-
-
-
-
-# hotbar
+##########
+# HOTBAR #
+##########
 
 scoreboard objectives add health health "Health"
 scoreboard objectives add armor armor "Armor"
@@ -13,14 +10,18 @@ scoreboard objectives add level level "Level"
 scoreboard objectives add xp xp "XP"
 
 
-# misc
+########
+# MISC #
+########
 
 scoreboard objectives add deaths deathCount "Deaths"
 scoreboard objectives add kills totalKillCount "Kills"
 scoreboard objectives add playerKills playerKillCount "Player Kills"
 
 
-# custom
+##########
+# CUSTOM #
+##########
 
 scoreboard objectives add animalsBred minecraft.custom:minecraft.animals_bred "Animals Bred"
 scoreboard objectives add distancebyElytra minecraft.custom:minecraft.aviate_one_cm "Distance by Elytra"
@@ -93,7 +94,9 @@ scoreboard objectives add distanceWalked minecraft.custom:minecraft.walk_one_cm 
 scoreboard objectives add distanceWalkedunderWater minecraft.custom:minecraft.walk_under_water_one_cm "Distance Walked under Water"
 
 
-# killed
+##########
+# KILLED #
+##########
 
 scoreboard objectives add areaEffectCloudsKilled minecraft.killed:minecraft.area_effect_cloud "Area Effect Clouds Killed"
 scoreboard objectives add armorStandsKilled minecraft.killed:minecraft.armor_stand "Armor Stands Killed"
@@ -199,7 +202,9 @@ scoreboard objectives add zombiePigmansKilled minecraft.killed:minecraft.zombie_
 scoreboard objectives add zombieVillagersKilled minecraft.killed:minecraft.zombie_villager "Zombie Villagers Killed"
 
 
-# killed by
+#############
+# KILLED BY #
+#############
 
 scoreboard objectives add deathsbyAreaEffectCloud minecraft.killed_by:minecraft.area_effect_cloud "Deaths by Area Effect Cloud"
 scoreboard objectives add deathsbyArmorStand minecraft.killed_by:minecraft.armor_stand "Deaths by Armor Stand"
@@ -305,7 +310,9 @@ scoreboard objectives add deathsbyZombiePigman minecraft.killed_by:minecraft.zom
 scoreboard objectives add deathsbyZombieVillager minecraft.killed_by:minecraft.zombie_villager "Deaths by Zombie Villager"
 
 
-# killed by color
+###################
+# KILLED BY COLOR #
+###################
 
 scoreboard objectives add killedByAqua killedByTeam.aqua "Killed by Aqua"
 scoreboard objectives add killedByBlack killedByTeam.black "Killed by Black"
@@ -325,7 +332,9 @@ scoreboard objectives add killedByWhite killedByTeam.white "Killed by White"
 scoreboard objectives add killedByYellow killedByTeam.yellow "Killed by Yellow"
 
 
-# kill color
+##############
+# KILL COLOR #
+##############
 
 scoreboard objectives add killedAqua teamkill.aqua "Aqua Kills"
 scoreboard objectives add killedBlack teamkill.black "Black Kills"
@@ -345,8 +354,9 @@ scoreboard objectives add killedWhite teamkill.white "White Kills"
 scoreboard objectives add killedYellow teamkill.yellow "Yellow Kills"
 
 
-# broken
-
+##########
+# BROKEN #
+##########
 
 # Standard tool/weapon tiers
 
@@ -422,15 +432,9 @@ scoreboard objectives add shieldsBroken minecraft.broken:minecraft.shield "Shiel
 scoreboard objectives add tridentsBroken minecraft.broken:minecraft.trident "Tridents Broken"
 
 
-
-
-
-
-
-
-
-
-# crafted
+###########
+# CRAFTED #
+###########
 
 scoreboard objectives add acaciaBoatsCrafted minecraft.crafted:minecraft.acacia_boat "Acacia Boats Crafted"
 scoreboard objectives add acaciaButtonsCrafted minecraft.crafted:minecraft.acacia_button "Acacia Buttons Crafted"
@@ -1311,7 +1315,9 @@ scoreboard objectives add zombieSpawnEggsCrafted minecraft.crafted:minecraft.zom
 scoreboard objectives add zombieVillagerSpawnEggsCrafted minecraft.crafted:minecraft.zombie_villager_spawn_egg "Zombie Villager Spawn Eggs Crafted"
 
 
-# dropped
+###########
+# DROPPED #
+###########
 
 scoreboard objectives add acaciaBoatsDropped minecraft.dropped:minecraft.acacia_boat "Acacia Boats Dropped"
 scoreboard objectives add acaciaButtonsDropped minecraft.dropped:minecraft.acacia_button "Acacia Buttons Dropped"
@@ -2192,7 +2198,9 @@ scoreboard objectives add zombieSpawnEggsDropped minecraft.dropped:minecraft.zom
 scoreboard objectives add zombieVillagerSpawnEggsDropped minecraft.dropped:minecraft.zombie_villager_spawn_egg "Zombie Villager Spawn Eggs Dropped"
 
 
-# mined
+#########
+# MINED #
+#########
 
 scoreboard objectives add acaciaButtonMined minecraft.mined:minecraft.acacia_button "Acacia Button Mined"
 scoreboard objectives add acaciaDoorMined minecraft.mined:minecraft.acacia_door "Acacia Door Mined"
@@ -2872,7 +2880,9 @@ scoreboard objectives add zombieHeadMined minecraft.mined:minecraft.zombie_head 
 scoreboard objectives add zombieWallHeadMined minecraft.mined:minecraft.zombie_wall_head "Zombie Wall Head Mined"
 
 
-# picked up
+#############
+# PICKED UP #
+#############
 
 scoreboard objectives add acaciaBoatPickedUp minecraft.picked_up:minecraft.acacia_boat "Acacia Boat Picked Up"
 scoreboard objectives add acaciaButtonPickedUp minecraft.picked_up:minecraft.acacia_button "Acacia Button Picked Up"
@@ -3753,7 +3763,9 @@ scoreboard objectives add zombieSpawnEggPickedUp minecraft.picked_up:minecraft.z
 scoreboard objectives add zombieVillagerSpawnEggPickedUp minecraft.picked_up:minecraft.zombie_villager_spawn_egg "Zombie Villager Spawn Egg Picked Up"
 
 
-# used
+###############
+# USED/PLACED #
+###############
 
 scoreboard objectives add acaciaBoatUses minecraft.used:minecraft.acacia_boat "Acacia Boat Uses"
 scoreboard objectives add acaciaButtonUses minecraft.used:minecraft.acacia_button "Acacia Button Uses"

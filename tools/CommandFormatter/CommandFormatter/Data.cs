@@ -1282,7 +1282,7 @@ namespace CommandFormatter
         };
 
         // list of items that are blocks
-        static List<string> Blocks = new List<string>()
+        static HashSet<string> Blocks = new HashSet<string>()
         {
           "minecraft.air",
           "minecraft.barrier",

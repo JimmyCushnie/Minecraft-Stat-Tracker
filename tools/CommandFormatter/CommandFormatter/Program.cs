@@ -41,15 +41,16 @@ namespace CommandFormatter
                         Words.Add(afterColon, (newName, newNamePlural));
                     }
 
+                    string id = word.single.FirstCharacterLowercase();
                     switch (beforeColon)
                     {
                         case "minecraft.broken":
-                            name = $"brk_{word}";
+                            name = $"brk_{id}";
                             DisplayName = $"{word.plural} Broken";
                             break;
 
                         case "minecraft.crafted":
-                            name = $"crf_{word}";
+                            name = $"crf_{id}";
                             DisplayName = $"{word.plural} Crafted";
                             break;
 
@@ -59,32 +60,32 @@ namespace CommandFormatter
                             break;
 
                         case "minecraft.dropped":
-                            name = $"drp_{word}";
+                            name = $"drp_{id}";
                             DisplayName = $"{word.plural} Dropped";
                             break;
 
                         case "minecraft.killed":
-                            name = $"kil_{word}";
+                            name = $"kil_{id}";
                             DisplayName = $"{word.plural} Killed";
                             break;
 
                         case "minecraft.killed_by":
-                            name = $"die_{word}";
+                            name = $"die_{id}";
                             DisplayName = $"Deaths by {word}";
                             break;
 
                         case "minecraft.mined":
-                            name = $"min_{word}";
+                            name = $"min_{id}";
                             DisplayName = $"{word.plural} Mined";
                             break;
 
                         case "minecraft.picked_up":
-                            name = $"pic_{word}";
+                            name = $"pic_{id}";
                             DisplayName = $"{word.plural} Picked Up";
                             break;
 
                         case "minecraft.used":
-                            name = $"use_{word}";
+                            name = $"use_{id}";
                             if (afterColon.IsBlock())
                                 DisplayName = $"{word.plural} Placed";
                             else
@@ -95,7 +96,7 @@ namespace CommandFormatter
                 
                 name = name.CapLength(16); // max length for an objective name is 16, which is bullshit
                 name = name.Replace(" ", "");
-                name = Char.ToLowerInvariant(name[0]) + name.Substring(1); // make first character lowercase
+                name = name.FirstCharacterLowercase();
 
                 commands.Add($"scoreboard objectives add {name} {line} \"{DisplayName}\"");
             }
@@ -116,5 +117,8 @@ namespace CommandFormatter
 
         static string CapLength(this string s, int maxLength)
             => (s.Length <= maxLength) ? s : s.Substring(0, maxLength);
+
+        static string FirstCharacterLowercase(this string s)
+            => Char.ToLowerInvariant(s[0]) + s.Substring(1);
     }
 }

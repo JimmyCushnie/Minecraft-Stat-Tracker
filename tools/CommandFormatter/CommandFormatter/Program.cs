@@ -22,6 +22,7 @@ namespace CommandFormatter
                 if (line[0] == '#') continue; // allow comments
 
                 string DisplayName = "YOU NEED TO INSERT A NAME HERE";
+                string name = "NAME_GOES_HERE";
 
                 int colonIndex = line.IndexOf(':');
                 if (colonIndex > 0)
@@ -43,38 +44,47 @@ namespace CommandFormatter
                     switch (beforeColon)
                     {
                         case "minecraft.broken":
+                            name = $"brk_{word}";
                             DisplayName = $"{word.plural} Broken";
                             break;
 
                         case "minecraft.crafted":
+                            name = $"crf_{word}";
                             DisplayName = $"{word.plural} Crafted";
                             break;
 
                         case "minecraft.custom":
+                            name = $"{word}";
                             DisplayName = $"{word}";
                             break;
 
                         case "minecraft.dropped":
+                            name = $"drp_{word}";
                             DisplayName = $"{word.plural} Dropped";
                             break;
 
                         case "minecraft.killed":
+                            name = $"kil_{word}";
                             DisplayName = $"{word.plural} Killed";
                             break;
 
                         case "minecraft.killed_by":
+                            name = $"die_{word}";
                             DisplayName = $"Deaths by {word}";
                             break;
 
                         case "minecraft.mined":
+                            name = $"min_{word}";
                             DisplayName = $"{word.plural} Mined";
                             break;
 
                         case "minecraft.picked_up":
+                            name = $"pic_{word}";
                             DisplayName = $"{word.plural} Picked Up";
                             break;
 
                         case "minecraft.used":
+                            name = $"use_{word}";
                             if (afterColon.IsBlock())
                                 DisplayName = $"{word.plural} Placed";
                             else
@@ -82,9 +92,9 @@ namespace CommandFormatter
                             break;
                     }
                 }
-
-                var name = DisplayName.Replace(" ", ""); // remove spaces
-                name = Char.ToLowerInvariant(name[0]) + name.Substring(1); // make the first character lowercase. I'm making names camelCase
+                
+                name = name.CapLength(16); // max length for an objective name is 16, which is bullshit
+                name = name.Replace(" ", "");
 
                 commands.Add($"scoreboard objectives add {name} {line} \"{DisplayName}\"");
             }
@@ -102,5 +112,8 @@ namespace CommandFormatter
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
+
+        static string CapLength(this string s, int maxLength)
+            => (s.Length <= maxLength) ? s : s.Substring(0, maxLength);
     }
 }

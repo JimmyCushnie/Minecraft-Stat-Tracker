@@ -62,7 +62,7 @@ scoreboard objectives add 1815 minecraft.custom:minecraft.interact_with_lectern 
 scoreboard objectives add 1816 minecraft.custom:minecraft.interact_with_loom "Interactions with Loom"
 scoreboard objectives add 1817 minecraft.custom:minecraft.interact_with_smoker "Interactions with Smoker"
 scoreboard objectives add 1818 minecraft.custom:minecraft.interact_with_stonecutter "Interactions with Stonecutter"
-scoreboard objectives add 1819 minecraft.custom:minecraft.jump "jumps"
+scoreboard objectives add 1819 minecraft.custom:minecraft.jump "Jumps"
 scoreboard objectives add 1820 minecraft.custom:minecraft.leave_game "Games Quit"
 scoreboard objectives add 1821 minecraft.custom:minecraft.minecart_one_cm "Distance by Minecart"
 scoreboard objectives add 1822 minecraft.custom:minecraft.mob_kills "Mob Kills"

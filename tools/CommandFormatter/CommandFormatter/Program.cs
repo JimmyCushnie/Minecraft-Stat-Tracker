@@ -95,6 +95,7 @@ namespace CommandFormatter
                 
                 name = name.CapLength(16); // max length for an objective name is 16, which is bullshit
                 name = name.Replace(" ", "");
+                name = Char.ToLowerInvariant(name[0]) + name.Substring(1); // make first character lowercase
 
                 commands.Add($"scoreboard objectives add {name} {line} \"{DisplayName}\"");
             }

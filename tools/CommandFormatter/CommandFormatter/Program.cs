@@ -40,11 +40,14 @@ namespace CommandFormatter
                     switch (beforeColon)
                     {
                         case "minecraft.broken":
-                            DisplayName = $"{itemName}s Broken";
+                            DisplayName = $"{Plural(itemName)} Broken";         // "Diamond Pickaxes Broken"
                             break;
 
                         case "minecraft.crafted":
-                            DisplayName = $"{itemName}s Crafted";
+                            if (itemName.IsBlock())
+                                DisplayName = $"{itemName} Crafted";            // "Stone Crafted"
+                            else
+                                DisplayName = $"{Plural(itemName)} Crafted";    // "Diamond Pickaxes Crafted"
                             break;
 
                         case "minecraft.custom":
@@ -52,28 +55,43 @@ namespace CommandFormatter
                             break;
 
                         case "minecraft.dropped":
-                            DisplayName = $"{itemName}s Dropped";
+                            if (itemName.IsBlock())
+                                DisplayName = $"{itemName} Dropped";            // "Stone Dropped"
+                            else
+                                DisplayName = $"{Plural(itemName)} Dropped";    // "Diamond Pickaxes Dropped"
                             break;
 
                         case "minecraft.killed":
-                            DisplayName = $"{itemName}s Killed";
+                            DisplayName = $"{Plural(itemName)} Killed";         // "Skeletons Killed"
                             break;
 
                         case "minecraft.killed_by":
-                            DisplayName = $"Deaths by {itemName}";
+                            DisplayName = $"Deaths by {itemName}";              // "Deaths by Skeleton"
                             break;
 
                         case "minecraft.mined":
-                            DisplayName = $"{itemName} Mined";
+                            DisplayName = $"{itemName} Mined";                  // "Stone Mined"
                             break;
 
                         case "minecraft.picked_up":
-                            DisplayName = $"{itemName} Picked Up";
+                            if (itemName.IsBlock())
+                                DisplayName = $"{itemName} Picked Up";          // "Stone Picked Up"
+                            else
+                                DisplayName = $"{Plural(itemName)} Picked Up";  // "Diamond Pickaxes Picked Up"
                             break;
 
                         case "minecraft.used":
-                            DisplayName = $"{itemName} Uses";
+                            if (itemName.IsBlock())
+                                DisplayName = $"{itemName} Placed";             // "Stone Placed"
+                            else
+                                DisplayName = $"{itemName} Uses";               // "Diamond Pickaxe Uses"
                             break;
+                    }
+
+                    string Plural(string single)
+                    {
+                        if (single[single.Length - 1] == 's') return single;
+                        return single + 's';
                     }
                 }
 

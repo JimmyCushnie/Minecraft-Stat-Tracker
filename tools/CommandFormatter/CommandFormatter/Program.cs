@@ -16,13 +16,13 @@ namespace CommandFormatter
             var lines = File.ReadAllLines(path);
             var commands = new List<string>();
 
-            foreach (string line in lines)
+            for (int i = 0; i < lines.Length; i++)
             {
+                var line = lines[i];
                 if (String.IsNullOrWhiteSpace(line)) continue;
                 if (line[0] == '#') continue; // allow comments
 
                 string DisplayName = "YOU NEED TO INSERT A NAME HERE";
-                string name = "NAME_GOES_HERE";
 
                 int colonIndex = line.IndexOf(':');
                 if (colonIndex > 0)
@@ -41,51 +41,41 @@ namespace CommandFormatter
                         Words.Add(afterColon, (newName, newNamePlural));
                     }
 
-                    string id = word.single.FirstCharacterLowercase();
                     switch (beforeColon)
                     {
                         case "minecraft.broken":
-                            name = $"brk_{id}";
                             DisplayName = $"{word.plural} Broken";
                             break;
 
                         case "minecraft.crafted":
-                            name = $"crf_{id}";
                             DisplayName = $"{word.plural} Crafted";
                             break;
 
                         case "minecraft.custom":
-                            name = $"{word}";
                             DisplayName = $"{word}";
                             break;
 
                         case "minecraft.dropped":
-                            name = $"drp_{id}";
                             DisplayName = $"{word.plural} Dropped";
                             break;
 
                         case "minecraft.killed":
-                            name = $"kil_{id}";
                             DisplayName = $"{word.plural} Killed";
                             break;
 
                         case "minecraft.killed_by":
-                            name = $"die_{id}";
                             DisplayName = $"Deaths by {word}";
                             break;
 
                         case "minecraft.mined":
-                            name = $"min_{id}";
                             DisplayName = $"{word.plural} Mined";
                             break;
 
                         case "minecraft.picked_up":
-                            name = $"pic_{id}";
                             DisplayName = $"{word.plural} Picked Up";
                             break;
 
                         case "minecraft.used":
-                            name = $"use_{id}";
                             if (afterColon.IsBlock())
                                 DisplayName = $"{word.plural} Placed";
                             else
@@ -93,12 +83,8 @@ namespace CommandFormatter
                             break;
                     }
                 }
-                
-                name = name.CapLength(16); // max length for an objective name is 16, which is bullshit
-                name = name.Replace(" ", "");
-                name = name.FirstCharacterLowercase();
 
-                commands.Add($"scoreboard objectives add {name} {line} \"{DisplayName}\"");
+                commands.Add($"scoreboard objectives add {i} {line} \"{DisplayName}\"");
             }
 
             Console.WriteLine($"Done, generated {commands.Count} commands. Press any key to print them.");

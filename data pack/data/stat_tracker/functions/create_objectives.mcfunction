@@ -2,8 +2,8 @@
 # as of 1.14 this list contains every valid scoreboard objective, minus a few that are impossible.
 
 # minecraft has a bullshit 16 character limit on objective names, so instead of trying to fit
-# good names into 16 characters I'm just using numbers as names. See also:
-# https://github.com/JimmyCushnie/Minecraft-Stat-Tracker/blob/51373a6285c0182607ff5e17961aecba1607bbcd/Guide.txt
+# good names into 16 characters I'm just using numbers as names. 
+# See also: https://github.com/JimmyCushnie/Minecraft-Stat-Tracker/blob/d2f40d803b3ce3ef9cb28b72ab4ad8cea01bbb6d/Guide.txt
 
 
 

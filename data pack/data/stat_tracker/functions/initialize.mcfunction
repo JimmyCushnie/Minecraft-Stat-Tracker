@@ -1,1 +1,2 @@
+function stat_tracker:create_objectives
 function stat_tracker:loop/loop_start

@@ -8,12 +8,6 @@ scoreboard players set $random_objectives_count x 176
 
 
 
-
-
-
-
-
-
 # first, we generate a random number. We do this by creating a new entity (and then immediately kill it) and getting the UUID.
 # details on this method: https://minecraftcommands.github.io/commanders-handbook/random-number-generation-with-uuids
 
@@ -40,8 +34,6 @@ execute if score $random x < 0 n run function stat_tracker:new_sidebar
 
 # now that we have a random number, we can use it to determine which objective to put on the sidebar.
 # god this is shitty. I hate data packs. This entire data pack would be like 5 lines of code with proper scripting support.
-
-tellraw @p ["",{"text":"Score is"},{"score":{"name":"$random","objective":"x"}}]
 
 ###########
 # GENERAL #

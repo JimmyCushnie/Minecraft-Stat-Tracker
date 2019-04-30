@@ -1,3 +1,12 @@
+# adds a shit ton of scoreboard objectives to track various things that go on in the game
+# as of 1.14 this list contains every valid scoreboard objective, minus a few that are impossible.
+
+# minecraft has a bullshit 16 character limit on objective names, so instead of trying to fit
+# good names into 16 characters I'm just using numbers as names. See also:
+# https://github.com/JimmyCushnie/Minecraft-Stat-Tracker/blob/51373a6285c0182607ff5e17961aecba1607bbcd/Guide.txt
+
+
+
 ##########
 # HOTBAR #
 ##########

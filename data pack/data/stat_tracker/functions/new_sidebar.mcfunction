@@ -486,3 +486,68 @@ execute if score $random x = 133 n run scoreboard objectives setdisplay sidebar 
 
 # Diamond Swords Crafted
 execute if score $random x = 134 n run scoreboard objectives setdisplay sidebar 1155
+
+
+#########
+# MINED #
+#########
+
+# Melons Mined
+execute if score $random x = 135 n run scoreboard objectives setdisplay sidebar 3307
+
+# Stone Mined
+execute if score $random x = 136 n run scoreboard objectives setdisplay sidebar 3530
+
+# Dirt Mined
+execute if score $random x = 137 n run scoreboard objectives setdisplay sidebar 3137
+
+# Sand Mined
+execute if score $random x = 138 n run scoreboard objectives setdisplay sidebar 3483
+
+# Netherrack Mined
+execute if score $random x = 139 n run scoreboard objectives setdisplay sidebar 3329
+
+# Spruce Logs Mined
+execute if score $random x = 140 n run scoreboard objectives setdisplay sidebar 3519
+
+# Acacia Logs Mined
+execute if score $random x = 141 n run scoreboard objectives setdisplay sidebar 2935
+
+# Birch Logs Mined
+execute if score $random x = 142 n run scoreboard objectives setdisplay sidebar 2969
+
+# Dark Oak Logs Mined
+execute if score $random x = 143 n run scoreboard objectives setdisplay sidebar 3095
+
+# Jungle Logs Mined
+execute if score $random x = 144 n run scoreboard objectives setdisplay sidebar 3233
+
+# Oak Logs Mined
+execute if score $random x = 145 n run scoreboard objectives setdisplay sidebar 3336
+
+# Obsidian Mined
+execute if score $random x = 146 n run scoreboard objectives setdisplay sidebar 3347
+
+# Nether Quartz Ore Mined
+execute if score $random x = 147 n run scoreboard objectives setdisplay sidebar 3326
+
+# Redstone Ore Mined
+execute if score $random x = 148 n run scoreboard objectives setdisplay sidebar 3476
+
+# Coal Ore Mined
+execute if score $random x = 149 n run scoreboard objectives setdisplay sidebar 3055
+
+# Diamond Ore Mined
+execute if score $random x = 150 n run scoreboard objectives setdisplay sidebar 3132
+
+# Emerald Ore Mined
+execute if score $random x = 151 n run scoreboard objectives setdisplay sidebar 3145
+
+# Gold Ore Mined
+execute if score $random x = 152 n run scoreboard objectives setdisplay sidebar 3172
+
+# Iron Ore Mined
+execute if score $random x = 153 n run scoreboard objectives setdisplay sidebar 3223
+
+# Lapis Lazuli Ore Mined
+execute if score $random x = 154 n run scoreboard objectives setdisplay sidebar 3248

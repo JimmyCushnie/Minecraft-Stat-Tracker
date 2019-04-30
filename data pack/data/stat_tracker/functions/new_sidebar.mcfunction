@@ -42,6 +42,9 @@ execute if score $random x < 0 n run function stat_tracker:new_sidebar
 # now that we have a random number, we can use it to determine which objective to put on the sidebar.
 # god this is shitty. I hate data packs. This entire data pack would be like 5 lines of code with proper scripting support.
 
+# for each objective in the sidebar rotation, we set that objective to display in the sidebar IF $random is a particular number.
+
+
 ###########
 # GENERAL #
 ###########

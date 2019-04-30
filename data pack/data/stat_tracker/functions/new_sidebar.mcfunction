@@ -32,6 +32,13 @@ scoreboard players operation $random x /= $divisor x
 execute if score $random x < 0 n run function stat_tracker:new_sidebar
 
 
+
+
+
+
+
+
+
 # now that we have a random number, we can use it to determine which objective to put on the sidebar.
 # god this is shitty. I hate data packs. This entire data pack would be like 5 lines of code with proper scripting support.
 
@@ -616,3 +623,20 @@ execute if score $random x = 174 n run scoreboard objectives setdisplay sidebar 
 
 # Dirt Placed
 execute if score $random x = 175 n run scoreboard objectives setdisplay sidebar 4740
+
+
+
+
+
+
+
+
+# HOW TO ADD AN OBJECTIVE TO THE SIDEBAR ROTATION
+
+# 1. look up the ID of your objective here: https://github.com/JimmyCushnie/Minecraft-Stat-Tracker/blob/a4e524326a98a84a743822b63b25832511ac6d7c/Guide.txt
+# 2. add the following command to this file:
+#      > execute if score $random x = [NUMBER] n run scoreboard objectives setdisplay sidebar [ID]
+# where [NUMBER] is the next number counting up and [ID] is the ID you just looked up.
+# 3. update the $random_objectives_count variable at the top of this file
+
+# I also made a tool to make doing this for a large number of objectives easier: https://github.com/JimmyCushnie/Minecraft-Stat-Tracker/tree/a4e524326a98a84a743822b63b25832511ac6d7c/tools/Data%20Pack%20Formatter

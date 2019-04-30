@@ -1,1 +1,1 @@
-function stat_tracker:new_sidebar
+function stat_tracker:loop/loop_start

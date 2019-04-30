@@ -4,7 +4,7 @@
 
 # the number of objectives you have that you want to be randomly selected among. Listed below.
 # note that this is one higher than the highest number in the chain, since the count starts at 0.
-scoreboard players set $random_objectives_count x 28
+scoreboard players set $random_objectives_count x 176
 
 
 
@@ -551,3 +551,76 @@ execute if score $random x = 153 n run scoreboard objectives setdisplay sidebar 
 
 # Lapis Lazuli Ore Mined
 execute if score $random x = 154 n run scoreboard objectives setdisplay sidebar 3248
+
+
+########
+# USED #
+########
+
+# Diamond Pickaxe Uses
+execute if score $random x = 155 n run scoreboard objectives setdisplay sidebar 4733
+
+# Diamond Shovel Uses
+execute if score $random x = 156 n run scoreboard objectives setdisplay sidebar 4734
+
+# Diamond Sword Uses
+execute if score $random x = 157 n run scoreboard objectives setdisplay sidebar 4735
+
+# Diamond Axe Uses
+execute if score $random x = 158 n run scoreboard objectives setdisplay sidebar 4724
+
+# Iron Pickaxe Uses
+execute if score $random x = 159 n run scoreboard objectives setdisplay sidebar 4886
+
+# Iron Shovel Uses
+execute if score $random x = 160 n run scoreboard objectives setdisplay sidebar 4887
+
+# Iron Sword Uses
+execute if score $random x = 161 n run scoreboard objectives setdisplay sidebar 4888
+
+# Iron Axe Uses
+execute if score $random x = 162 n run scoreboard objectives setdisplay sidebar 4873
+
+# Iron Hoe Uses
+execute if score $random x = 163 n run scoreboard objectives setdisplay sidebar 4880
+
+# Flint and Steel Uses
+execute if score $random x = 164 n run scoreboard objectives setdisplay sidebar 4789
+
+# Shears Uses
+execute if score $random x = 165 n run scoreboard objectives setdisplay sidebar 5198
+
+# Bow Uses
+execute if score $random x = 166 n run scoreboard objectives setdisplay sidebar 4572
+
+# Crossbow Uses
+execute if score $random x = 167 n run scoreboard objectives setdisplay sidebar 4667
+
+# Painting Uses
+execute if score $random x = 168 n run scoreboard objectives setdisplay sidebar 5065
+
+# Item Frame Uses
+execute if score $random x = 169 n run scoreboard objectives setdisplay sidebar 4890
+
+# Bone Meal Uses
+execute if score $random x = 170 n run scoreboard objectives setdisplay sidebar 4569
+
+# Steak Uses
+execute if score $random x = 171 n run scoreboard objectives setdisplay sidebar 4652
+
+# Bread Uses
+execute if score $random x = 172 n run scoreboard objectives setdisplay sidebar 4577
+
+# Carrot Uses
+execute if score $random x = 173 n run scoreboard objectives setdisplay sidebar 4605
+
+
+##########
+# PLACED #
+##########
+
+# Cobblestone Placed
+execute if score $random x = 174 n run scoreboard objectives setdisplay sidebar 4637
+
+# Dirt Placed
+execute if score $random x = 175 n run scoreboard objectives setdisplay sidebar 4740

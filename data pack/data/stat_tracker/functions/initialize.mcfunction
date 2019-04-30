@@ -1,3 +1,1 @@
-# test
-scoreboard objectives add counter dummy "Counter"
-
+function stat_tracker:new_sidebar

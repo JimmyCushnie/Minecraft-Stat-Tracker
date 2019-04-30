@@ -4259,7 +4259,7 @@ Mushroom Stems Placed.............................5002
 Mushroom Stew Uses................................5003
 Music Disc - '11' Uses............................5004
 Music Disc - '13' Uses............................5005
-Music Disc - 'blocks" Uses........................5006
+Music Disc - 'blocks' Uses........................5006
 Music Disc - 'cat' Uses...........................5007
 Music Disc - 'chirp' Uses.........................5008
 Music Disc - 'far' Uses...........................5009

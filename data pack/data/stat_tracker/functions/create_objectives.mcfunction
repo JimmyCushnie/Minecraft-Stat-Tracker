@@ -4255,7 +4255,7 @@ scoreboard objectives add 5002 minecraft.used:minecraft.mushroom_stem "Mushroom 
 scoreboard objectives add 5003 minecraft.used:minecraft.mushroom_stew "Mushroom Stew Uses"
 scoreboard objectives add 5004 minecraft.used:minecraft.music_disc_11 "Music Disc - '11' Uses"
 scoreboard objectives add 5005 minecraft.used:minecraft.music_disc_13 "Music Disc - '13' Uses"
-scoreboard objectives add 5006 minecraft.used:minecraft.music_disc_blocks "Music Disc - 'blocks" Uses"
+scoreboard objectives add 5006 minecraft.used:minecraft.music_disc_blocks "Music Disc - 'blocks' Uses"
 scoreboard objectives add 5007 minecraft.used:minecraft.music_disc_cat "Music Disc - 'cat' Uses"
 scoreboard objectives add 5008 minecraft.used:minecraft.music_disc_chirp "Music Disc - 'chirp' Uses"
 scoreboard objectives add 5009 minecraft.used:minecraft.music_disc_far "Music Disc - 'far' Uses"
